@@ -1,0 +1,7 @@
+.wall-picture {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    position: relative;
+    top: 0;
+    left: 0;
+  }
