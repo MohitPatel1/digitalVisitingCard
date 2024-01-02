@@ -1,5 +1,4 @@
 // src/App.jsx
-
 import React from 'react';
 import './App.css';
 
@@ -11,10 +10,10 @@ function WallPicture({ src }) {
 	return <img className="wall-picture" src={src}  alt="Wall-Image"/>;
   }
 
-function ContactInfo({ label, value }) {
+function ContactInfo({ icon, value }) {
   return (
     <div className="contact-info">
-      <span className="label">{label}:</span>
+      <img src={icon}/>
       <span className="value">{value}</span>
     </div>
   );
@@ -22,23 +21,31 @@ function ContactInfo({ label, value }) {
 
 function Footer({ address, website }) {
   return (
-    <div className="footer">
-      <div>{address}</div>
-      <div>{website}</div>
+    <div>
+      <div className="flex justify-center items-center gap-1"> 
+	  	<img src='/icons/location.svg'/>
+		<span className="value text-center">{address}</span>
+	  </div>
+	  <div className="flex justify-center items-center gap-1"> 
+	  	<img src='/icons/website.svg'/>
+		<span className="value">{website}</span>
+	  </div>
     </div>
   );
 }
 
 function Card({ user }) {
   return (
-    <div className="h-screen bg-blue-300">
-	  <div className="flex flex-col w-full h-full justify-center items-center gap-1 text-slate-100">			
-	 	<WallPicture src={user.WallPicture}/>
+    <div className="h-screen bg-slate-300">
+	  <div className="flex flex-col w-full h-full items-center gap-1">			
+	  <div className='relative mb-10'>
+	 	<WallPicture src={user.wallPicture}/>
 		<ProfilePicture src={user.profilePicture} />
+		</div>
 		<h1>{user.name}</h1>
-		<p>{user.title}</p>
+		<h4>{user.title}</h4>
 		{user.contactDetails.map((detail) => (
-			<ContactInfo key={detail.label} label={detail.label} value={detail.value} />
+			<ContactInfo key={detail.icon} icon={detail.icon} value={detail.value} />
 		))}
 		<Footer address={user.address} website={user.website} />
 	  </div>
@@ -48,16 +55,17 @@ function Card({ user }) {
 
 function App() {
   const userData = {
-    name: 'Peter Michael',
-    title: 'Professional Pastry Chef',
+    name: 'Krishna Agarwaal',
+    title: 'CEO @ Smart Agent',
 	wallPicture:'/smartAgent512x512.png',
-    profilePicture: '/smartAgent512x512.png', // Replace with actual image path
+    profilePicture: '/krishna.jpg',
     contactDetails: [
-      { label: 'Mobile', value: '123-456-7890' },
-      { label: 'Email', value: 'peter@grandissimocafe.com' },
+      { icon: '/icons/phone.svg', value: '+91 7575806994' },
+	  { icon: '/icons/telephone.svg', value: '079 26920886' },
+      { icon: '/icons/website.svg', value: 'hello@smartagent.one' },
     ],
-    address: 'Grandissimo Cafe, San Francisco, CA',
-    website: 'www.grandissimocafe.com',
+    address: '290M New Cloth Market, Sarangpur Ahmedabad, 380002',
+    website: 'www.smartagent.one',
   };
 
   return (
