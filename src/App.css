@@ -1,40 +1,40 @@
-.wall-picture {    
-    height: auto;
-    position: relative;
-    top: 0;
-    left: 0;
-  }
+.wall-picture {
+  height: auto;
+  position: relative;
+  top: 0;
+  left: 0;
+}
 
-  /* src/App.css */
+/* src/App.css */
 
 .card {
-    max-width: 300px;
-    border: 1px solid #ccc;
-    padding: 16px;
-    text-align: center;
-  }
-  
-  .profile-picture {
-    height: 100px;
-    width: 100px;
-    border-radius: 50%; /* Circular image */
-    border: 3px solid white; /* Border around profile image */
-    position: absolute;
-    bottom: -50px; /* Half the height of the image to overlap */
-    left: 50%;
-    transform: translateX(-50%); /* Center the image */
-  }
-  
-  .contact-info {
-    display: flex;
-    justify-content: space-between;
-    margin: 4px 0;
-  }
-  
-  .label {
-    font-weight: bold;
-  }
-  
-  .value {
-    font-weight: lighter;
-  }
+  max-width: 300px;
+  border: 1px solid #ccc;
+  padding: 16px;
+  text-align: center;
+}
+
+.profile-picture {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%; /* Circular image */
+  border: 3px solid white; /* Border around profile image */
+  position: absolute;
+  bottom: -50px; /* Half the height of the image to overlap */
+  left: 50%;
+  transform: translateX(-50%); /* Center the image */
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 4px 0;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.value {
+  font-weight: lighter;
+}
