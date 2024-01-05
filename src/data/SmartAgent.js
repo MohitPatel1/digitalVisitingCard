@@ -3,7 +3,9 @@ export const SmartAgent = {
   name: 'Smart Agent',
   title: 'AI based - Automatic Invoice Entry',
   wallPicture: '/smartAgent512x512.png',
-  profilePicture: '/krishna.jpg',
+  logo: '/smartAgent512x512.png',
+  about:
+    'Smart Agent is building a community of pro-tech Smart Agents. So that like minded Agents can increase their network leading to exchange of information & growth in business.',
   contactDetails: [
     { type: 'phone', icon: '/icons/phone.png', value: '+91 7575806994' },
     {
@@ -29,4 +31,14 @@ export const SmartAgent = {
   address: '290M New Cloth Market, Sarangpur Ahmedabad, 380002',
   website: 'smartagent.one',
   websiteName: 'Smart Agent',
+  users: [
+    {
+      id: 'krishna-agarwal',
+      name: 'Krishna Agarwal',
+      email: 'hello@smartagent.one',
+      profileIcon: '/krishna.jpg',
+      role: 'CEO @SmartAgent',
+      phone: '+91 7575806994',
+    },
+  ],
 };

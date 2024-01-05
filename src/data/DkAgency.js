@@ -2,7 +2,7 @@ export const DkAgency = {
   url: 'dk-agency',
   name: 'D. K. Agency',
   title: 'Textile & Garment Agencies',
-  wallPicture: '/banner-logo.jpeg',
+  wallPicture: '/dk-agency-banner-logo.jpeg',
   logo: '/dk-agency-logo.jpg',
   about:
     'To provide fast, free, reliable, and comprehensive information to our users and enable discovery and transactions for all products and services.',
